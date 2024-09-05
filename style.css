@@ -40,8 +40,10 @@ header > h1 {
 }
 
 /* Estilos para o parágrafo dentro do cabeçalho */
-header > p {
+header > h5 {
     text-align: center; /* Centraliza o texto do parágrafo */
+    font-size: 1.1em;
+    font-weight: normal;
 }
 
 /* Estilos para o menu de navegação */
