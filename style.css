@@ -10,7 +10,7 @@
 
 /* Estilos gerais para o corpo da página */
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Fonte principal do documento */
+    font-family: Arial, Verdana, sans-serif; /* Fonte principal do documento */
     background-color: #84E1AD; /* Cor de fundo da página */
     padding: 0;
     margin: 0;
@@ -233,6 +233,8 @@ footer {
     /* Exibe os links do menu de navegação como blocos */
     nav > a {
         margin-bottom: 5px;
+        display: block;
+        text-align: center;
     }
 
     /* Faz as imagens e o iframe ocuparem 100% da largura disponível */
@@ -249,8 +251,26 @@ footer {
     }
 
     /* Ajusta margens e tamanho da fonte dos parágrafos e títulos */
-    p, h1, h2 {
+    p, h2 {
         margin: 8px 0;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
         font-size: 20px;
+    }
+
+    h2#titulo-desc {
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 1em;
+        text-align: center;
+        font-weight: normal;
     }
 }
