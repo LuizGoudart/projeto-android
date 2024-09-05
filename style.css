@@ -1,0 +1,256 @@
+@charset "UTF-8"; /* Define a codificação de caracteres como UTF-8 */
+
+/* Importa a fonte personalizada 'android' */
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte principal do documento */
+    background-color: #84E1AD; /* Cor de fundo da página */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para parágrafos */
+p {
+    text-indent: 35px; /* Indenta o texto do parágrafo */
+    text-align: justify; /* Alinha o texto de forma justificada */
+    padding: 10px; /* Espaçamento interno dos parágrafos */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-image: linear-gradient(to bottom, #39CD7B, #021d0e); /* Gradiente de fundo */
+    background-color: rgb(18, 109, 23); /* Cor de fundo caso o gradiente não carregue */
+    color: white;
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    margin: 0;
+}
+
+/* Estilos para o título dentro do cabeçalho */
+header > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte do título */
+    color: white;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o parágrafo dentro do cabeçalho */
+header > p {
+    text-align: center; /* Centraliza o texto do parágrafo */
+}
+
+/* Estilos para o menu de navegação */
+nav {
+    padding: 8px; /* Espaçamento interno do menu */
+}
+
+/* Estilos para links no menu de navegação */
+nav > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte dos links */
+    margin-right: 10px; /* Margem à direita dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white;
+    padding: 5px; /* Espaçamento interno dos links */
+    border-radius: 3px; /* Bordas arredondadas dos links */
+    transition: background-color 0.6s ease, transform 0.4s ease; 
+}
+
+/* Estilo para o efeito hover nos links do menu de navegação */
+nav > a:hover {
+    background-color: rgba(211, 211, 211, 0.212); /* Cor de fundo ao passar o mouse */
+    
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    width: 970px; /* Largura fixa */
+    background-color: white;
+    margin: auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno do conteúdo */
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.377); /* Sombra ao redor do conteúdo */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilos para os títulos h1 e h2 */
+h1, h2 {
+    font-family: android; /* Fonte personalizada */
+    color: #185B36; /* Cor do texto */
+}
+
+h2#titulo-desc {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte dos títulos específicos */
+    color: white;
+    background-color: #094e28; /* Cor de fundo do título */
+    border-radius: 7px; /* Bordas arredondadas */
+    padding: 5px; /* Espaçamento interno */
+}
+
+/* Estilo para o elemento aside */
+aside {
+    background-color: #39CD7B; /* Cor de fundo */
+    border-radius: 7px; /* Bordas arredondadas */
+    box-shadow: 0px 1px 4px black;
+}
+
+/* Estilos para a classe 'imagens' */
+.imagens {
+    margin: auto;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+
+
+#img-irina {
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px black;
+}
+
+/* Estilos para o elemento com id 'gradient' */
+#gradient {
+    background-image: linear-gradient(to right, #C8ECD8, white); /* Gradiente de fundo */
+    padding-left: 8px; /* Espaçamento interno à esquerda */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilos para a tag span */
+span {
+    font-weight: bold; /* Negrito */
+    color: #185B36; /* Cor do texto */
+}
+
+/* Estilos para links com a classe 'link' */
+.link {
+    padding: 3px; /* Espaçamento interno */
+    margin: 0;
+    text-decoration: none; /* Remove o sublinhado */
+    color: #094e28; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    margin: 2px; /* Margem ao redor */
+    border-radius: 3px; /* Bordas arredondadas */
+}
+
+.link::after {
+    content: "📎"; /* Adiciona um ícone após o link */
+}
+
+/* Estilo para o efeito hover nos links com a classe 'link' */
+.link:hover {
+    background-color: #42ce81; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o elemento com id 'video' */
+#video {
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: #094e28; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.349); /* Sombra ao redor */
+}
+
+#video > iframe {
+    box-shadow: -1px 5px 7px rgba(0, 0, 0, 0.349); /* Sombra ao redor do iframe */
+    border-radius: 3px;
+}
+
+/* Estilos para a classe 'container' com layout flex */
+.container {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre as colunas */
+}
+
+/* Estilos para as colunas */
+.column {
+    width: 45%; /* Largura das colunas */
+}
+
+/* Estilo para o parágrafo final */
+#p-final {
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o rodapé */
+footer {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte do rodapé */
+    background-color: #185B36; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+#p-footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+}
+
+#link-gustavo {
+    color: #ffffff; /* Cor do link */
+}
+
+#link-gustavo:hover {
+    background-color: #ffffff13; /* Cor de fundo ao passar o mouse */
+}
+
+/* Media query para telas com largura máxima de 1024px (dispositivos grandes) */
+@media screen and (max-width: 1024px) {
+    /* Ajusta a largura e o padding do conteúdo principal */
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* Faz as imagens ocuparem 100% da largura disponível */
+    .imagens img {
+        width: 80%;
+        height: auto;
+    }
+
+
+    /* Faz o iframe ocupar 100% da largura disponível */
+    iframe {
+        height: 90%;
+        width: 100%;
+        border-radius: 3px;
+    }
+
+    /* Ajusta margens dos parágrafos e títulos */
+    p, h1, h2 {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Media query para telas com largura máxima de 480px (dispositivos móveis) */
+@media screen and (max-width: 480px) {
+
+
+    /* Reduz o espaçamento interno do cabeçalho */
+    header {
+        padding: 10px;
+    }
+
+    /* Exibe os links do menu de navegação como blocos */
+    nav > a {
+        margin-bottom: 5px;
+    }
+
+    /* Faz as imagens e o iframe ocuparem 100% da largura disponível */
+    .imagens img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Faz o iframe ocupar 100% da largura disponível */
+    iframe {
+        height: 80%;
+        width: 100%;
+        border-radius: 3px;
+    }
+
+    /* Ajusta margens e tamanho da fonte dos parágrafos e títulos */
+    p, h1, h2 {
+        margin: 8px 0;
+        font-size: 20px;
+    }
+}
