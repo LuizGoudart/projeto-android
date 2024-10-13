@@ -49,6 +49,7 @@ header > h5 {
 /* Estilos para o menu de navegação */
 nav {
     padding: 8px; /* Espaçamento interno do menu */
+    text-align: center;
 }
 
 /* Estilos para links no menu de navegação */
