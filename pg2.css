@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* Define a codificação de caracteres como UTF-8 */
+
+/* Importa a fonte personalizada 'android' */
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, Verdana, sans-serif;
+    /* Fonte principal do documento */
+    background-color: #84E1AD;
+    /* Cor de fundo da página */
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #39CD7B, #021d0e);
+    /* Gradiente de fundo */
+    background-color: rgb(18, 109, 23);
+    /* Cor de fundo caso o gradiente não carregue */
+    color: white;
+    padding: 20px;
+    /* Espaçamento interno do cabeçalho */
+    margin: 0;
+}
+
+/* Estilos para o título dentro do cabeçalho */
+header>h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Fonte do título */
+    color: white;
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Estilos para o parágrafo dentro do cabeçalho */
+header>h5 {
+    text-align: center;
+    /* Centraliza o texto do parágrafo */
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+/* Estilos para o menu de navegação */
+nav {
+    padding: 8px;
+    /* Espaçamento interno do menu */
+    text-align: center;
+}
+
+/* Estilos para links no menu de navegação */
+nav>a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Fonte dos links */
+    margin-right: 10px;
+    /* Margem à direita dos links */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: white;
+    padding: 5px;
+    /* Espaçamento interno dos links */
+    border-radius: 3px;
+    /* Bordas arredondadas dos links */
+    transition: background-color 0.6s ease, transform 0.4s ease;
+}
+
+/* Estilo para o efeito hover nos links do menu de navegação */
+nav>a:hover {
+    background-color: rgba(211, 211, 211, 0.212);
+    /* Cor de fundo ao passar o mouse */
+
+}
+
+.main-curiosidade {
+    background-color: white;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 1.1px black;
+}
+
+.main-curiosidade > p {
+    
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'android', sans-serif;
+    color: #00b44e;
+}
+
+.link {
+    padding: 3px;
+    /* Espaçamento interno */
+    margin: 0;
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #81ffba;
+    /* Cor do texto */
+    font-weight: bold;
+    /* Negrito */
+    margin: 2px;
+    /* Margem ao redor */
+    border-radius: 3px;
+    /* Bordas arredondadas */
+}
+
+
+/* Estilos para o rodapé */
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px;
+    margin: 0;
+    background-color: #185B36;
+   
+    color: white;
+   
+}
+
+#p-footer {
+    text-align: center;
+    /* Centraliza o texto do rodapé */
+}
