@@ -77,6 +77,21 @@ main {
     padding: 20px; /* Espaçamento interno do conteúdo */
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.377); /* Sombra ao redor do conteúdo */
     border-radius: 4px; /* Bordas arredondadas */
+    animation: aparecer 2s;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Move um pouco para cima */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Retorna à posição original */
+    }
 }
 
 /* Estilos para os títulos h1 e h2 */
