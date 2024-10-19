@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* Define a codificação de caracteres como UTF-8 */
+
+/* Importa a fonte personalizada 'android' */
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, Verdana, sans-serif;
+    /* Fonte principal do documento */
+    background-color: #84E1AD;
+    /* Cor de fundo da página */
+    padding: 0;
+    margin: 0;
+    
+}
+
+header {
+    background-image: linear-gradient(to bottom, #39CD7B, #021d0e);
+    /* Gradiente de fundo */
+    background-color: rgb(18, 109, 23);
+    /* Cor de fundo caso o gradiente não carregue */
+    color: white;
+    padding: 20px;
+    /* Espaçamento interno do cabeçalho */
+    margin: 0;
+}
+
+/* Estilos para o título dentro do cabeçalho */
+header>h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Fonte do título */
+    color: white;
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Estilos para o parágrafo dentro do cabeçalho */
+header>h5 {
+    text-align: center;
+    /* Centraliza o texto do parágrafo */
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+/* Estilos para o menu de navegação */
+nav {
+    padding: 8px;
+    /* Espaçamento interno do menu */
+    text-align: center;
+}
+
+/* Estilos para links no menu de navegação */
+nav>a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Fonte dos links */
+    margin-right: 10px;
+    /* Margem à direita dos links */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: white;
+    padding: 5px;
+    /* Espaçamento interno dos links */
+    border-radius: 3px;
+    /* Bordas arredondadas dos links */
+    transition: background-color 0.6s ease, transform 0.4s ease;
+}
+
+/* Estilo para o efeito hover nos links do menu de navegação */
+nav>a:hover {
+    background-color: rgba(211, 211, 211, 0.212);
+    /* Cor de fundo ao passar o mouse */
+
+}
+
+main {
+    height: 70%;
+    width: 48%;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    padding: 30px;
+    display: block;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    border: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+    align-self: flex-start;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
